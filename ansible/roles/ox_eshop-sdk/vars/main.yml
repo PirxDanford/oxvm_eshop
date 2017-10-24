@@ -1,2 +1,0 @@
----
-eshop_sdk_info_file: "{{ eshop.sdk.path }}/info.txt"

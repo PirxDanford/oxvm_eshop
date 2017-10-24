@@ -74,11 +74,3 @@ eshop:
   source:
     repo: https://github.com/OXID-eSales/oxideshop_ce.git
     version: stable-master
-  sdk:
-    path: ~/eshop_sdk
-    module_skeleton_generator:
-      install: true
-      repo: https://github.com/OXID-eSales/module_skeleton_generator.git
-    module_certification_tools:
-      install: true
-      repo: https://github.com/OXID-eSales/module_certification_tools.git

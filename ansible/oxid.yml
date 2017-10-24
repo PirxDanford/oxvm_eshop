@@ -11,6 +11,3 @@
     - common
     - ox_selenium
     - ox_eshop
-    - ox_eshop-sdk
-    - ox_eshop-sdk-certification_tools
-    - ox_eshop-sdk-skeleton_generator

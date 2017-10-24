@@ -1,3 +1,0 @@
----
-- name: Remove module skeleton generator from eShop
-  file: "path={{ eshop_path.modules }}/oxps/modulegenerator/ state=absent"

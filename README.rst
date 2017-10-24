@@ -18,8 +18,7 @@ Final solution is composed of two repositories (*linked using git sub-modules*):
 * `Base VM <https://github.com/OXID-eSales/oxvm_base>`_ - Base LAMP stack
   (*also used as base for other VMs*);
 * `eShop VM <https://github.com/OXID-eSales/oxvm_eshop>`_ - Current repository,
-  eShop specific configuration, roles and
-  `SDK components <http://wiki.oxidforge.org/SDK>`_.
+  eShop specific configuration and roles.
 
 Getting started
 ===============
@@ -659,67 +658,12 @@ SDK
 
 Out of the box the VM is equipped with the following SDK components:
 
-* `Module skeleton generator <https://github.com/OXID-eSales/module_skeleton_generator>`_ - module
-  which helps to create new OXID eShop modules;
-* `Module certification tools <https://github.com/OXID-eSales/module_certification_tools>`_ - a
-  collection of tools which allows one to see a detailed report from module
-  certification process;
 * `Testing library <https://github.com/OXID-eSales/testing_library>`_ - a
   library for writing various kind of tests inside eShop and a set of tools for
   running those tests.
 
-There are also other SDK components which could be found at:
-http://wiki.oxidforge.org/SDK
-
 Usage
 -----
-
-Module skeleton generator
-^^^^^^^^^^^^^^^^^^^^^^^^^
-
-By default this module is installed under eShop's ``modules`` directory (by
-default it will be ``/var/www/oxideshop/source/modules/`` which is defined by
-``eshop_path.modules`` key in configuration).
-
-The module needs to be activated manually. Further instructions on how to enable
-and use the module could be found at (*installation part can be skipped*):
-https://github.com/OXID-eSales/module_skeleton_generator#usage
-
-Module certification tools
-^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-By default the tools are installed under VM's home folder (``~/eshop_sdk`` which
-is defined by ``eshop.sdk.path`` key in configuration). The repository of tools
-is cloned out in ``~/eshop_sdk/module_certification_tools`` and an extra
-shortcut ``ox_cert`` is created inside ``~/eshop_sdk/bin/`` (it's included in
-``PATH`` environment variable automatically).
-
-There is no need to do any installation part for tools to work as it is already
-done by the VM's provision process.
-
-In order to invoke the certification report generator just use the provided
-shortcut:
-
-``ox_cert <vendor_name>/<module_name>``
-
-An example of invoking the reporting tool for module generator
-[#cert_tools_call]_:
-
-.. code:: bash
-
-  $ ox_cert oxps/modulegenerator
-
-After the execution it will generate a HTML document which will be placed at
-``~/eshop_sdk/module_certification_tools/result/<datetime>/report.html``.
-
-Once the report is generated one can just view the contents of it straight
-from inside the VM using command line tools or copy the file to shared folder
-and view it from host machine, e.g.:
-
-.. code:: bash
-
-  cp ~/eshop_sdk/module_certification_tools/result/20150916101719/report.html \
-    /var/www/oxideshop
 
 Testing library
 ^^^^^^^^^^^^^^^
