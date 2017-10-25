@@ -9,3 +9,4 @@ The major version number reflects the compatible eshop release series, so 6.x.x 
 
 ### Removed
 - OXID SDK
+- Selenium role

@@ -42,15 +42,6 @@ adminer:
   install: true
 adminer_editor:
   install: true
-selenium:
-  install: false
-  package:
-    firefox:
-      deb_url: https://github.com/OXID-eSales/oxvm_assets/raw/master/firefox-mozilla-build_31.0-0ubuntu1_amd64.deb
-      deb_checksum: sha256:41c3a02d304a26e10c237516c773ba51d93eb2b11e5a82292bb47b26bb2ba859
-    self:
-      jar_url: https://github.com/OXID-eSales/oxvm_assets/raw/master/selenium-server-standalone-2.47.1.jar
-      jar_checksum: sha256:45665f3bb4dffb668981258faff91823db4a1f6250fd24fd6698ec159a4aeb8a
 eshop_path:
   root: "{{ eshop_target_path }}"
   source: "{{ eshop_target_path }}/source"

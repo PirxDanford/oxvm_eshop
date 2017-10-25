@@ -1,5 +1,0 @@
----
-- include: install.yml
-  when: selenium.install
-  tags:
-    - selenium
