@@ -49,19 +49,4 @@ eshop_path:
   library: "{{ eshop_target_path }}/library"
   modules: "{{ eshop_target_path }}/source/modules"
 eshop_target_path: "{{ vagrant_local.vm.app_shared_folder.target }}"
-eshop:
-  config:
-    utf_mode: 1
-    use_ssl: false
-  composer:
-    clean_vendors: true
-    env: "SHOP_PATH=\"'{{ eshop_path.source }}'\" SHOP_TESTS_PATH='{{ eshop_path.tests }}' PARTIAL_MODULE_PATHS='null'"
-    root: "{{ eshop_path.root }}"
-    vendor: "{{ eshop_target_path }}/vendor"
-    cache_url: ~
-    json_source_url: https://raw.githubusercontent.com/OXID-eSales/oxideshop_ce/b-5.2-ce/source/composer.json
-    lock_source_url: https://raw.githubusercontent.com/OXID-eSales/oxideshop_ce/b-5.2-ce/source/composer.lock
-    prefer: dist
-  source:
-    repo: https://github.com/OXID-eSales/oxideshop_ce.git
-    version: stable-master
+

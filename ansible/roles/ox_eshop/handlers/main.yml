@@ -1,3 +1,0 @@
----
-- name: display reset shop error
-  debug: msg="Provision process was unable to run eShop setup. Have a look at the error message above for more details. Please use http://{{ vagrant_local.vm.aliases.0 }}/setup/ to run it manually."

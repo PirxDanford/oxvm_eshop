@@ -7,6 +7,10 @@ The major version number reflects the compatible eshop release series, so 6.x.x 
 
 ## [Unreleased]
 
+### Changed
+- README for a clean setup of the shop
+
 ### Removed
 - OXID SDK
 - Selenium role
+- Automatic shop setup

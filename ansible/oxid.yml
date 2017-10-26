@@ -9,4 +9,3 @@
     - [../personal.yml, ~/.personal_ansible_vm.yml, ../project.yml, vars/oxideshop.yml]
   roles:
     - common
-    - ox_eshop
